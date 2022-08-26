@@ -29,5 +29,11 @@ public class Generics<T extends Comparable<T>> {
         Integer i1 = input.nextInt(), i2 = input.nextInt(), i3 = input.nextInt();
         System.out.println("Enter three floats");
         Float f1 = input.nextFloat(), f2 = input.nextFloat(), f3 = input.nextFloat();
+        System.out.println("Enter three strings");
+        String s1 = input.next(), s2 = input.next(), s3 = input.next();
+        checkMax(i1,i2,i3);
+        checkMax(f1,f2,f3);
+        checkMax(s1,s2,s3);
     }
 }
+
