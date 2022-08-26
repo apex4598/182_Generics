@@ -18,10 +18,11 @@ public class Generics<T extends Comparable<T>> {
             max = y;
         if (z.compareTo(max) > 0)
             max = z;
-
+        printMax(x,y,z,max);
     }
-
-
+    public static <T> void printMax( T x, T y, T z, T max) {
+        System.out.println("Max of " +x +", " +y +" & " +z +" is " +max);
+    }
     public static void main(String[] args) {
         System.out.println("Welcome to Generics program ");
         Scanner input = new Scanner(System.in);
