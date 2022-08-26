@@ -1,5 +1,7 @@
 package com.bridgelabz;
 
+import java.util.Scanner;
+
 public class Generics<T extends Comparable<T>> {
 
     public T x, y, z;
@@ -22,7 +24,10 @@ public class Generics<T extends Comparable<T>> {
 
     public static void main(String[] args) {
         System.out.println("Welcome to Generics program ");
-
-
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter three integers");
+        Integer i1 = input.nextInt(), i2 = input.nextInt(), i3 = input.nextInt();
+        System.out.println("Enter three floats");
+        Float f1 = input.nextFloat(), f2 = input.nextFloat(), f3 = input.nextFloat();
     }
 }
